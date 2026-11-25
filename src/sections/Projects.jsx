@@ -30,7 +30,7 @@ const Projects = () => {
     const currentProject = myProjects[selectedProjectIndex];
 
     return (
-        <section className="c-space my-20">
+        <section className="c-space my-20" id="projects">
             <p className="head-text">My Selected Work</p>
 
             <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
@@ -53,35 +53,50 @@ const Projects = () => {
                     <div className="flex items-center justify-between flex-wrap gap-5">
                         <div className="flex items-center gap-3">
                             {currentProject.tags.map((tag, index) => (
-                                <div key={index} className="tech-logo">
+                                <div key={index} className="tech-logo" title={tag.name}>
                                     <img src={tag.path} alt={tag.name} />
                                 </div>
                             ))}
                         </div>
 
-                        <a
-                            className="flex items-center gap-2 cursor-pointer text-white-600"
-                            href={currentProject.href}
-                            target="_blank"
-                            rel="noreferrer">
-                            <p>Check Live Site</p>
-                            <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-                        </a>
+                        <div className="flex items-center gap-3 flex-wrap">
+                            {currentProject.liveHref && (
+                                <a
+                                    className="flex items-center gap-2 cursor-pointer text-white px-3.5 py-2 rounded-lg bg-black-300 border border-black-500 hover:border-white transition-all text-sm font-medium hover:bg-black-500"
+                                    href={currentProject.liveHref}
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    <span>Live Demo</span>
+                                    <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+                                </a>
+                            )}
+
+                            {currentProject.githubHref && (
+                                <a
+                                    className="flex items-center gap-2 cursor-pointer text-white px-3.5 py-2 rounded-lg bg-black-300 border border-black-500 hover:border-white transition-all text-sm font-medium hover:bg-black-500"
+                                    href={currentProject.githubHref}
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    <img src="/assets/github.svg" alt="github" className="w-4 h-4" />
+                                    <span>GitHub</span>
+                                </a>
+                            )}
+                        </div>
                     </div>
 
                     <div className="flex justify-between items-center mt-7">
-                        <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
+                        <button className="arrow-btn" onClick={() => handleNavigation('previous')} aria-label="Previous Project">
                             <img src="/assets/left-arrow.png" alt="left arrow" />
                         </button>
 
-                        <button className="arrow-btn" onClick={() => handleNavigation('next')}>
+                        <button className="arrow-btn" onClick={() => handleNavigation('next')} aria-label="Next Project">
                             <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
                         </button>
                     </div>
                 </div>
 
                 <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-                    <Canvas>
+                    <Canvas dpr={[1, 1.5]}>
                         <ambientLight intensity={Math.PI} />
                         <directionalLight position={[10, 10, 5]} />
                         <Center>

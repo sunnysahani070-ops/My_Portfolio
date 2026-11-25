@@ -8,15 +8,15 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-3">
-                <div className="social-icon">
+                <a href="https://github.com/sunnysahani070-ops" target="_blank" rel="noreferrer" className="social-icon" title="GitHub">
                     <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
-                </div>
-                <div className="social-icon">
-                    <img src="/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2" />
-                </div>
-                <div className="social-icon">
-                    <img src="/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2" />
-                </div>
+                </a>
+                <a href="https://linkedin.com/in/sunny-sahani" target="_blank" rel="noreferrer" className="social-icon" title="LinkedIn">
+                    <img src="/assets/twitter.svg" alt="linkedin" className="w-1/2 h-1/2" />
+                </a>
+                <a href="mailto:sunnysahani070@gmail.com" className="social-icon" title="Email Sunny">
+                    <img src="/assets/instagram.svg" alt="email" className="w-1/2 h-1/2" />
+                </a>
             </div>
 
             <p className="text-white-500">© 2026 Sunny Sahani. All rights reserved.</p>

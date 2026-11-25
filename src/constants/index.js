@@ -11,11 +11,16 @@ export const navLinks = [
     },
     {
         id: 3,
-        name: 'Work',
-        href: '#work',
+        name: 'Projects',
+        href: '#projects',
     },
     {
         id: 4,
+        name: 'Experience',
+        href: '#work',
+    },
+    {
+        id: 5,
         name: 'Contact',
         href: '#contact',
     },
@@ -25,44 +30,46 @@ export const clientReviews = [
     {
         id: 1,
         name: 'Emily Johnson',
-        position: 'Marketing Director at GreenLeaf',
+        position: 'Product Lead & Collaborator',
         img: 'assets/review1.png',
         review:
-            'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+            'Working with Sunny was a fantastic experience. He transformed complex technical requirements into a high-performance, responsive platform. His attention to detail and ability to integrate AI seamlessly are unmatched.',
     },
     {
         id: 2,
         name: 'Mark Rogers',
-        position: 'Founder of TechGear Shop',
+        position: 'Tech Lead at Hackathon Team',
         img: 'assets/review2.png',
         review:
-            'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+            'Sunny’s expertise in full-stack web development and REST APIs is truly impressive. He delivered robust architectures with exceptional speed and clean code under tight deadlines. Fantastic developer to work with!',
     },
     {
         id: 3,
         name: 'John Dohsas',
-        position: 'Project Manager at UrbanTech ',
+        position: 'Engineering Mentor',
         img: 'assets/review3.png',
         review:
-            'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+            'Sunny has outstanding problem-solving abilities and a rock-solid grasp of Data Structures and Algorithms. He consistently builds intuitive, scalable solutions whether working on backend systems or modern frontend UIs.',
     },
     {
         id: 4,
         name: 'Ether Smith',
-        position: 'CEO of BrightStar Enterprises',
+        position: 'Startup Founder',
         img: 'assets/review4.png',
         review:
-            'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+            'Sunny delivered beyond expectations. He understood our multi-tenant requirements and delivered clean, role-based backend APIs and authentication flows. Highly recommended for full-stack and AI-driven development.',
     },
 ];
 
 export const myProjects = [
     {
-        title: 'LeftClick',
-        desc: 'LeftClick is a cinematic React web app built for a B2B outbound growth agency. Engineered with a "Brutalist Signal" aesthetic, it utilizes Tailwind and GSAP. It replaces generic fluff with raw data',
+        title: 'MockInterview AI',
+        desc: 'An AI-powered mock interview platform for technical interview preparation with dynamic question generation, automated response evaluation, scoring, and personalized feedback.',
         subdesc:
-            'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, JavaScript, LeftClick is designed for optimal performance and scalability.',
-        href: 'https://github.com/sunnysahani070-ops/LeftClick',
+            'Built with Next.js 14, TypeScript, Google Gemini 2.5, Clerk authentication, and Neon PostgreSQL. Features voice recognition, speech transcription, camera simulation, and real-time AI feedback.',
+        href: 'https://mock-interview-ai-rose.vercel.app',
+        liveHref: 'https://mock-interview-ai-rose.vercel.app',
+        githubHref: 'https://github.com/sunnysahani070-ops/MockInterviewAi',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
@@ -89,17 +96,19 @@ export const myProjects = [
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Next.js',
+                path: '/assets/github.svg',
             },
         ],
     },
     {
-        title: 'FoodDeliveryApp',
-        desc: 'FoodDeliveryApp is a modern MERN-based food delivery website featuring user authentication, cart management, order tracking, payment integration, and a responsive UI for a smooth ordering experience. ',
+        title: 'Homingo Tutor',
+        desc: 'An AI-powered Socratic mathematics tutor for CBSE Class 10 that diagnoses student misconceptions and provides an adaptive 4-level hint ladder in English, Hindi, and Hinglish.',
         subdesc:
-            'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, JavaScript, FoodDeliveryApp is designed for optimal performance and scalability.',
-        href: 'https://github.com/sunnysahani070-ops/FoodDelivery-MERN-main',
+            'Built with Next.js 15, TypeScript, Google Gemini API, and Supabase. Implements multilingual tutoring, handwritten solution analysis, diagnostic assessments, and real-time learning progress analytics.',
+        href: 'https://homingotutor.vercel.app',
+        liveHref: 'https://homingotutor.vercel.app',
+        githubHref: 'https://github.com/sunnysahani070-ops/Homingo-tutor',
         texture: '/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
         logoStyle: {
@@ -132,11 +141,13 @@ export const myProjects = [
         ],
     },
     {
-        title: 'GenzVerse',
-        desc: 'A modern MERN-based eCommerce platform for Gen Z, offering trendy graphic t-shirts and aesthetic posters with secure payments, user authentication, cart management, and a responsive shopping experience.',
+        title: 'Restraque – Restaurant Management',
+        desc: 'A robust multi-tenant restaurant management and table-ordering platform with secure RESTful APIs, customer OTP authentication, and role-based access control (RBAC).',
         subdesc:
-            'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, JavaScript, GenzVerse is designed for optimal performance and scalability.',
-        href: 'https://github.com/MradulSingh109/Genzverse#genzverse',
+            'Built with Node.js, Express.js, TypeScript, Prisma, and PostgreSQL. Features restaurant onboarding, branch management, menu cataloging, QR-based table ordering workflows, and loyalty rewards.',
+        href: 'https://github.com/sunnysahani070-ops',
+        liveHref: null,
+        githubHref: 'https://github.com/sunnysahani070-ops',
         texture: '/textures/project/project3.mp4',
         logo: '/assets/project-logo3.png',
         logoStyle: {
@@ -150,8 +161,8 @@ export const myProjects = [
         tags: [
             {
                 id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'TypeScript',
+                path: '/assets/typescript.png',
             },
             {
                 id: 2,
@@ -160,22 +171,24 @@ export const myProjects = [
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'React.js',
+                path: '/assets/react.svg',
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'GitHub',
+                path: '/assets/github.svg',
             },
         ],
     },
     {
-        title: 'PyClimaExplorer',
-        desc: 'PyClimaExplorer is a full-stack web application designed to visualize and explore historical climate data across various global cities. It leverages a modern frontend built with React and Vite, coupled with a fast and efficient backend powered by FastAPI.',
+        title: 'CoinPulse',
+        desc: 'A modern, real-time cryptocurrency analytics platform featuring live market prices, interactive candlestick charts, and comprehensive coin metrics powered by the CoinGecko API.',
         subdesc:
-            'Built with React, Vite, FastAPI, SQLAlchemy, and Chart.js, PyClimaExplorer provides a seamless and intuitive interface for users to explore and analyze historical climate data.',
-        href: 'https://github.com/MradulSingh109/PyClimaExplorer',
+            'Built with Next.js, TypeScript, and Tailwind CSS. Designed for optimal speed, real-time data streaming, and a responsive trading dashboard experience across all devices.',
+        href: 'https://coin-pulse-gules.vercel.app',
+        liveHref: 'https://coin-pulse-gules.vercel.app',
+        githubHref: 'https://github.com/sunnysahani070-ops/CoinPulse',
         texture: '/textures/project/project4.mp4',
         logo: '/assets/project-logo4.png',
         logoStyle: {
@@ -208,11 +221,13 @@ export const myProjects = [
         ],
     },
     {
-        title: 'MovieReservation',
-        desc: 'A full-stack Movie Reservation System built with Node.js, Express, and MySQL. Features include secure user authentication, dynamic movie scheduling, interactive seat selection, and Stripe payment integration for seamless ticket bookings.',
+        title: 'LeftClick',
+        desc: 'A cinematic web app engineered with a "Brutalist Signal" aesthetic for a B2B outbound growth agency. Replaces fluff with raw data density and micro-interactive components.',
         subdesc:
-            'Built with Node.js, Express, and MySQL, MovieReservation provides a seamless and intuitive interface for users to explore and analyze historical climate data.',
-        href: 'https://github.com/sunnysahani070-ops/MovieReservation',
+            'Built with React, Tailwind CSS, JavaScript, and GSAP animations, optimized for high performance, intent qualification, and engaging enterprise client dialogue.',
+        href: 'https://github.com/sunnysahani070-ops/LeftClick',
+        liveHref: null,
+        githubHref: 'https://github.com/sunnysahani070-ops/LeftClick',
         texture: '/textures/project/project5.mp4',
         logo: '/assets/project-logo5.png',
         logoStyle: {
@@ -260,28 +275,28 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
     {
         id: 1,
-        name: 'Framer',
-        pos: 'Lead Web Developer',
-        duration: '2022 - Present',
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-        icon: '/assets/framer.svg',
+        name: 'Restraque',
+        pos: 'Backend Developer',
+        duration: '2024 - Present',
+        title: "Contributing as a Backend Developer to a multi-tenant restaurant management and ordering platform. Developing secure REST APIs, role-based access control, OTP auth, and QR-based table ordering workflows with Node.js, Express, TypeScript, Prisma, and PostgreSQL.",
+        icon: '/assets/react.svg',
         animation: 'victory',
     },
     {
         id: 2,
-        name: 'Figma',
-        pos: 'Web Developer',
-        duration: '2020 - 2022',
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-        icon: '/assets/figma.svg',
+        name: 'AI & Full-Stack Projects',
+        pos: 'Full-Stack Developer',
+        duration: '2024 - Present',
+        title: "Architecting and developing production-ready full-stack applications like MockInterview AI and Homingo Tutor using Next.js, Google Gemini API, Supabase, Neon PostgreSQL, Clerk authentication, and speech transcription.",
+        icon: '/assets/framer.svg',
         animation: 'clapping',
     },
     {
         id: 3,
-        name: 'Notion',
-        pos: 'Junior Web Developer',
-        duration: '2019 - 2020',
-        title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+        name: 'IET Lucknow',
+        pos: 'B.Tech in Computer Science & Engineering',
+        duration: 'Aug 2024 - Present',
+        title: "Studying Core Computer Science (DSA, OOP, DBMS, OS, Computer Networks) with an 8.48/10 CGPA. Represented IET Lucknow at Technex '26 (IIT BHU Varanasi) and earned NPTEL Elite Certification in Cyber Security & Privacy (Top 1%).",
         icon: '/assets/notion.svg',
         animation: 'salute',
     },

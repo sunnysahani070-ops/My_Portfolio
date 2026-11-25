@@ -28,11 +28,11 @@ const Hero = () => {
                 <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
                     Hi, I am Sunny <span className="waving-hand">👋</span>
                 </p>
-                <p className="hero_tag text-gray_gradient">Web Developer & UI/UX Designer</p>
+                <p className="hero_tag text-gray_gradient">Full-Stack Developer & Software Engineer</p>
             </div>
 
             <div className="w-full h-full absolute inset-0">
-                <Canvas className="w-full h-full">
+                <Canvas className="w-full h-full" dpr={[1, 1.5]}>
                     <Suspense fallback={<CanvasLoader />}>
                         {/* To hide controller */}
                         <Leva hidden />
@@ -55,9 +55,17 @@ const Hero = () => {
                 </Canvas>
             </div>
 
-            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-                <a href="#about" className="w-fit">
-                    <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space flex sm:flex-row flex-col justify-center items-center gap-4">
+                <a href="#about" className="w-fit max-sm:w-full">
+                    <Button name="Explore My Work" isBeam containerClass="sm:w-fit w-full sm:min-w-56" />
+                </a>
+                <a
+                    href="/resume.html"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-fit max-sm:w-full flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-black-300 hover:bg-black-500 border border-black-200 hover:border-white transition-all text-white text-base font-medium shadow-xl">
+                    <span>View Resume</span>
+                    <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
                 </a>
             </div>
         </section>
